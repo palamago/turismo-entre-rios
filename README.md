@@ -1,4 +1,4 @@
-turismo-entre-rios
-==================
+HotelViz
+========
 
-Simple d3 map showing tourist points in Entre Ríos, Argentina
+Visualización interactiva de ocupación hotelera de los principales turísticos de argentina.

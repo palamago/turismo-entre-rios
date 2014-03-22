@@ -1,0 +1,285 @@
+
+html,body{
+	height: 100%;
+}
+
+body {
+	color:#CCC;
+	background-image: url('../img/bg.jpeg');
+	overflow-x: hidden;
+}
+
+h1 {
+	text-align: center;
+}
+h2 {
+	font-weight: bold;
+	margin: 0;
+	color:#a3c725;
+	text-shadow:0 1px 1px rgba(0,0,0,0.3);
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.tab-pane {
+	height: 500px;
+}
+
+p,small {
+	color:#606d72!important;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	text-transform: uppercase;
+	font-size: 11px;font-weight: bold;
+	margin:0;
+}
+
+small {
+	text-transform: none
+}
+/* MAP */
+svg{
+	position: absolute;
+}
+
+circle.ciudad {
+	box-shadow: 0 0 0 7px rgba(255, 211, 0, 0.9), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 20px rgba(0, 0, 0, 0.3);
+	fill-opacity:0.5;
+}
+
+circle.hover{
+	fill:#A3C725;
+	stroke:#A3C725;
+	cursor:help;
+}
+
+g.departamentos path,
+g.amba path {
+	stroke: #AAA;
+	stroke-width: 1px;
+	fill: #EEE;
+}
+
+circle.PLAYAS {
+	fill:#009999;
+	stroke:#009999;
+}
+
+circle.HOSPEDAJE {
+	fill:#4811AE;
+	stroke:#4811AE;
+}
+
+
+circle.TERMAS {
+	fill:#FFDF00;
+	stroke:#FFDF00;
+}
+
+
+circle.SITIOS {
+	fill:#FF7400;
+	stroke:#FF7400;
+}
+
+
+g.provincias path {
+	stroke: rgba(0,0,0,0.2);
+	fill: none;
+	stroke-width: 1px;
+	stroke-linejoin: round;
+}
+
+g.mini-provincias path {
+	stroke: rgba(0,0,0,0.2);
+	fill: rgba(100, 100, 100, 0.5);
+	stroke-width: 1px;
+	stroke-linejoin: round;
+}
+
+g.provincias path#islas-malvinas {
+	fill:#EEE;
+}
+
+g.departamentos path.selected,
+g.amba path.selected {
+	fill:#25c5de;
+	stroke:#118c9f;
+		stroke-width: 1px;
+
+}
+
+g.departamentos path.hover,
+g.amba path.hover {
+	fill:#A3C725;
+	stroke:#A3C725;
+	cursor:help;
+}
+
+.poblacion {
+	-webkit-filter: drop-shadow( 1px 2px 1px rgba(0,0,0,0.6) );
+    		filter: drop-shadow( 1px 2px 1px rgba(0,0,0,0.6)); /* Same syntax as box-shadow */
+}
+
+#tooltip {
+  position: absolute;
+  text-align: center;
+  border: 0px;
+  pointer-events: none;
+  width: 150px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.8);
+  background-color: black;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  color: white;
+  min-width: 210px;
+}
+
+
+.btn.filter-order.disabled {
+	background: #13191b;
+	border-color:#13191b;
+	color: white;
+	box-shadow: inset 0 0 8px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.1);
+}
+
+.well.disclaimer {
+		background: #13191b;
+		border: none;
+}
+.btn.filter-order.btn-default {
+	background: #39454a;
+	border-color:#39454a;
+	color: white;
+}
+
+#tooltip strong {
+	color: #a3c725;
+}
+
+.col-lg-1 h5 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	margin:10px 0;
+}
+
+.slider-thing {
+	margin-top:100px;
+}
+/* SLIDER */
+#slider{
+	display: none;
+}
+
+.slider.slider-vertical {
+	height: 300px;
+	margin:0 20px 10px 20px;
+}
+
+.slider-selection {
+	background-color: #25c5de;
+	background-image: none;
+}
+
+.slider-handle {
+	width: 30px;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	height: 30px;
+}
+
+.slider-handle:active {
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+
+}
+
+.slider.slider-vertical .slider-handle {
+	margin-left: -10px;
+	margin-top: -15px;
+}
+
+#selector-container {
+	position: absolute;
+	top: 280px;
+	text-align: center;
+	width: 50%;
+	width: 500px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 20px;
+	left: 50px;
+}
+
+#selector-container p{
+	color: white !important;
+	font-size: 13px;
+	margin-bottom: 16px;
+}
+
+/* MAIN */
+#main-container{
+	min-height: 700px;
+}
+
+#map-column {
+	min-height: 700px;
+	padding-right: 0px;
+}
+
+#main-container .col-lg-1{
+	margin: 20px 0px;
+}
+
+.footer {
+	border-top: 1px solid  rgba(0,0,0,0.8);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	margin-top: 30px;
+	padding-top: 29px;
+	padding-bottom: 30px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+p.texto-resumen{
+	font-size: 40px;
+	color: #FFF !important;
+	text-transform: none;
+	font-weight: normal;
+	text-align: center;
+}
+
+p.texto-resumen .important1{
+	font-weight: bold;
+	color: #A3C725;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+p.texto-resumen .important2{
+	font-weight: bold;
+	color: #25C5DE;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.filter-value{
+	font-size: 15px;
+	color:white;
+}
+
+#full-screen-btn {
+	position: absolute;
+	top: 7px;
+	right: 7px;
+}
+
+.month {
+	font-size: 7pt;
+}
+
+#slider-container{
+	height: 110px;
+}
